@@ -13,14 +13,18 @@ function changebgImage() {
         pozadi.classList.remove("bg2")
         pozadi.classList.add("bg3")
      }
-     else  {
+      else if (pozadi.classList.contains("bg3"))
+     {
         pozadi.classList.remove("bg3")
+        pozadi.classList.add("bg4")
+     }
+     else {
+        pozadi.classList.remove("bg4")
         pozadi.classList.add("bg1")
      }
-
     }
 
-    setInterval(changebgImage, 10000);
+    setInterval(changebgImage, 6000);
 
     function showMenu() {
 
